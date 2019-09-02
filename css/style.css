@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eee;
+  position: relative;
+}
+.form_data {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.form_data.err #phone_number {
+  border: 1px solid #f00;
+}
+.form_data input {
+  margin-bottom: 10px;
+}
+.form_data input[type="text"] {
+  background-color: transparent !important;
+  border: none;
+}
+.form_data .btns {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.form_data .btns input {
+  width: 30%;
+}
+@media all and (max-width: 630px) {
+  .form_data .btns {
+    flex-direction: column;
+  }
+}
+.edit input[type="text"] {
+  background-color: #fff !important;
+  border: 1px solid #eee;
+}
+#message {
+  color: #f00;
+}
