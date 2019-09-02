@@ -1,0 +1,43 @@
+*
+  margin 0
+  padding 0
+
+body
+  background #eee
+  position relative
+.form_data
+  display -webkit-flex
+  display -moz-flex
+  display -ms-flex
+  display -o-flex
+  display flex
+  flex-direction column
+  width 600px
+  margin auto
+  padding-left 15px
+  padding-right 15px
+  &.err
+    #phone_number
+      border 1px solid red
+  input
+    margin-bottom 10px
+    &[type="text"]
+      background-color transparent !important
+      border none
+  .btns
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flex
+    display -o-flex
+    display flex
+    justify-content space-between
+    input
+      width 30%
+  @media all and (max-width: 630px)
+    .btns
+      flex-direction column
+.edit input[type="text"]
+  background-color white !important
+  border 1px solid #eee
+#message
+  color red
